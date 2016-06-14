@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BolsaDeEmpleo.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="BolsaDeEmpleo.Admin" %>
 
 <!DOCTYPE html>
 
@@ -49,17 +49,19 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/"><spam class="glyphicon glyphicon-briefcase" style="padding-right:10px"></spam>CompuTrabajo</a>
+                    <a class="navbar-brand" runat="server" href="~/">CompuTrabajo</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/"><spam class="glyphicon glyphicon-list-alt"  style="padding-right:10px"></spam>Definir Puestos Vacantes</a></li>
-                       
+                         <li><a runat="server" href="~/"><spam class="glyphicon glyphicon-user" style="padding-right:10px"></spam>Interesados en una Oferta</a></li>
+                        <li><a runat="server" href="~/"><p class="glyphicon glyphicon-calendar" style="padding-right:10px"></p>Entrevistas Programadas</a></li>
+                        <li><a runat="server" href="~/"><p class="glyphicon glyphicon-duplicate" style="padding-right:10px"></p>Reportes</a></li>
+                        <li><a runat="server" href="~/"><spam class="glyphicon glyphicon-tasks" style="padding-right:10px"></spam>Información Organizacional</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Login"></spam>Salir<spam class="glyphicon glyphicon-log-out" style="padding-left:10px"></a></li>
+                                <li><a runat="server" href="~/Account/Login">Salir<spam class="glyphicon glyphicon-log-out" style="padding-left:10px"></spam></a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>

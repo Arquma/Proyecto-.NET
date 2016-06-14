@@ -5,11 +5,20 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Owin;
 using BolsaDeEmpleo.Models;
+using System.Web.Configuration;
+using BolsaDeEmpleoLibrary.Business;
 
 namespace BolsaDeEmpleo.Account
 {
     public partial class Login : Page
+
+      
     {
+        ContactoEmpleadorBusiness contactoBuss = new ContactoEmpleadorBusiness(WebConfigurationManager.ConnectionStrings["BolsaEmpleo"].ConnectionString);
+        EmpleadoBusiness empleadoBuss = new EmpleadoBusiness(WebConfigurationManager.ConnectionStrings["BolsaEmpleo"].ConnectionString);
+
+        String conn = (WebConfigurationManager.ConnectionStrings["BolsaEmpleo"].ConnectionString);
+
         protected void Page_Load(object sender, EventArgs e)
         {
            // RegisterHyperLink.NavigateUrl = "Register";
@@ -33,23 +42,40 @@ namespace BolsaDeEmpleo.Account
 
                 // This doen't count login failures towards account lockout
                 // To enable password failures to trigger lockout, change to shouldLockout: true
-                var result = signinManager.PasswordSignIn(Email.Text, Password.Text, shouldLockout: false);
+                //String result = //signinManager.PasswordSignIn(Email.Text, Password.Text, shouldLockout: false);
+                String result;
+                if (contactoBuss.confirmLogin(Email.Text, Password.Text))
+                {
+                     result = "Empleador";
+                }
+                
+                else if (empleadoBuss.confirmLogin(Email.Text, Password.Text))
+                {
+                    result = "Solitante";
+                }
+                else if ((Email.Text=="admin") &&  (Password.Text=="admin"))
+                {
+                    result = "Administrador";
+                }
+                else
+                {
+                    result = "Error";
+                }
+                
 
                 switch (result)
                 {
-                    case SignInStatus.Success:
-                        IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+                    case "Empleador":
+                        Response.Redirect("~/Pages/InicioEmpleador.aspx");
                         break;
-                    case SignInStatus.LockedOut:
-                        Response.Redirect("/Account/Lockout");
+                    case "Solitante":
+                        Response.Redirect("~/Pages/InicioSolicitante.aspx");
                         break;
-                    case SignInStatus.RequiresVerification:
-                        Response.Redirect(String.Format("/Account/TwoFactorAuthenticationSignIn?ReturnUrl={0}&RememberMe={1}", 
-                                                        Request.QueryString["ReturnUrl"],
-                                                        RememberMe.Checked),
-                                          true);
+                    case "Administrador":
+                        Response.Redirect("~/Pages/InicioAdmin.aspx");
                         break;
-                    case SignInStatus.Failure:
+
+                    case "Error":
                     default:
                         FailureText.Text = "Datos invalidos";
                         ErrorMessage.Visible = true;

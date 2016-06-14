@@ -1,4 +1,5 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BolsaDeEmpleo.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Solicitante.master.cs" Inherits="BolsaDeEmpleo.Solicitante" %>
+
 
 <!DOCTYPE html>
 
@@ -49,17 +50,19 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/"><spam class="glyphicon glyphicon-briefcase" style="padding-right:10px"></spam>CompuTrabajo</a>
+                    <a class="navbar-brand" runat="server" href="~/"><p class="glyphicon glyphicon-briefcase"></p>CompuTrabajo</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/"><spam class="glyphicon glyphicon-list-alt"  style="padding-right:10px"></spam>Definir Puestos Vacantes</a></li>
-                       
+
+                        <li><a runat="server" href="~/"><spam class="glyphicon glyphicon-list-alt" style="padding-right:10px"></spam>Puestos Vacantes</a></li>
+                        <li><a runat="server" href="~/"><spam class="glyphicon glyphicon-list-alt" style="padding-right:10px"></spam>Entervistas</a></li>
+                       <li><a runat="server" href="~/"><spam class="glyphicon glyphicon-list-alt" style="padding-right:10px"></spam>Informacion Personal</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Login"></spam>Salir<spam class="glyphicon glyphicon-log-out" style="padding-left:10px"></a></li>
+                                <li><a runat="server" href="~/Account/Login">Salir<spam class="glyphicon glyphicon-log-out" style="padding-left:10px"></spam></a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>

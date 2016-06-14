@@ -77,3 +77,5 @@ C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\obj\Debug\BolsaDeEmpleo.csprojResolveAssemblyReference.cache
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\obj\Debug\BolsaDeEmpleo.dll
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\obj\Debug\BolsaDeEmpleo.pdb
+C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\BolsaDeEmpleoLibrary.dll
+C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\BolsaDeEmpleoLibrary.pdb

@@ -19,8 +19,8 @@
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="Email" CssClass="col-md-2 control-label">Usuario</asp:Label>
                         <div class="col-md-10">
-                            <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
-                            <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
+                            <asp:TextBox runat="server" ID="Email" CssClass="form-control"  />
+                            <asp:RequiredFieldValidator runat="server" ControlToValidate="Password"
                                 CssClass="text-danger" ErrorMessage="Este campo es requerido." />
                         </div>
                     </div>
@@ -35,12 +35,17 @@
                         <div class="col-md-offset-2 col-md-10">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="col-md-offset-2 col-md-10">
-                            <asp:Button runat="server" OnClick="LogIn" Text="Ingresar" CssClass="btn btn-default" />
+                   
+                        <div class="col-md-offset-2 col-md-2">
+                            <asp:Button runat="server" OnClick="LogIn" Text="Ingresar" CssClass="btn btn-success" />
                         </div>
-                    </div>
-                </div>
+                  
+                    
+                        <div class="col-md-offset-2 col-md-2">
+                            <asp:Button runat="server"  Text="Registrarse" CssClass="btn btn-info" />
+                        </div>
+                  
+               
                 <p>
                     &nbsp;</p>
                 <p>

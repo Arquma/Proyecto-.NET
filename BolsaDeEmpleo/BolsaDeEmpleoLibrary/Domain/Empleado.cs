@@ -22,6 +22,8 @@ namespace BolsaDeEmpleoLibrary.Domain
         string genero;
         string estadoCivil;
         RolEmpleado rolEmpleado;
+        string usuario;
+        string password;
 
         public int IdEmpleado
         {
@@ -202,6 +204,32 @@ namespace BolsaDeEmpleoLibrary.Domain
             set
             {
                 rolEmpleado = value;
+            }
+        }
+
+        public string Usuario
+        {
+            get
+            {
+                return usuario;
+            }
+
+            set
+            {
+                usuario = value;
+            }
+        }
+
+        public string Password
+        {
+            get
+            {
+                return password;
+            }
+
+            set
+            {
+                password = value;
             }
         }
 
