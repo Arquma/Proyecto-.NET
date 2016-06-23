@@ -1,20 +1,25 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Login.Master" CodeBehind="Registro.aspx.cs" Inherits="BolsaDeEmpleo.Account.Registro" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Registro.Master" CodeBehind="Registro.aspx.cs" Inherits="BolsaDeEmpleo.Account.Registro" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
+     <h2><%: Title %></h2>
 
+    <div class="row">
+         <div class="col-md-8">
+             <h4>Registrar una nueva cuenta </h4>
+             <br/>
+         </div>
+            <div class="col-md-8">
       <div id="rootwizard">
     	<div class="navbar">
     	  <div class="navbar-inner">
     	    <div class="container">
     	<ul>
-    	  	<li><a href="#tab1" data-toggle="tab">First</a></li>
-    		<li><a href="#tab2" data-toggle="tab">Second</a></li>
-    		<li><a href="#tab3" data-toggle="tab">Third</a></li>
-    		<li><a href="#tab4" data-toggle="tab">Forth</a></li>
-    		<li><a href="#tab5" data-toggle="tab">Fifth</a></li>
-    		<li><a href="#tab6" data-toggle="tab">Sixth</a></li>
-    		<li><a href="#tab7" data-toggle="tab">Seventh</a></li>
+    	  	<li><a href="#tab1" data-toggle="tab">Información Básica</a></li>
+    		<li><a href="#tab2" data-toggle="tab">Atestados Académicos</a></li>
+    		<li><a href="#tab3" data-toggle="tab">Experiencias Laborales</a></li>
+    		<li><a href="#tab4" data-toggle="tab">Finalizar</a></li>
+    	
     	</ul>
     	 </div>
     	  </div>
@@ -32,24 +37,20 @@
     		<div class="tab-pane" id="tab4">
     			4
     	    </div>
-    		<div class="tab-pane" id="tab5">
-    			5
-    	    </div>
-    		<div class="tab-pane" id="tab6">
-    			6
-    	    </div>
-    		<div class="tab-pane" id="tab7">
-    			7
-    	    </div>
+    		
     		<ul class="pager wizard">
-    			<li class="previous first"><a href="javascript:;">First</a></li>
-    			<li class="previous"><a href="javascript:;">Previous</a></li>
-    			<li class="next last"><a href="javascript:;">Last</a></li>
-    		  	<li class="next"><a href="javascript:;">Next</a></li>
-    			<li class="finish"><a href="javascript:;">Finish</a></li>
+    			
+    			<li class="previous"><a href="javascript:;">Anterior</a></li>
+    		  	<li class="next"><a href="javascript:;">Siguiente</a></li>
+    			<li class="finish"><a href="javascript:;" class="btn btn-success">Guardar</a></li>
     		</ul>
     	</div>
     </div>
+    </div>
+ </div>
+    
+
+    
     <script>
         $(document).ready(function() {
       	$('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
