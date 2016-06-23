@@ -25,6 +25,10 @@ namespace BolsaDeEmpleo
                 // Use the Anti-XSRF token from the cookie
                 _antiXsrfTokenValue = requestCookie.Value;
                 Page.ViewStateUserKey = _antiXsrfTokenValue;
+                if ((String)Session["tipoUsuario"] == null)
+                {
+                    Response.Redirect("~/Account/Login.aspx");
+                }
             }
             else
             {

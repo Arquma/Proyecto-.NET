@@ -1,3 +1,4 @@
+C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\obj\Debug\BolsaDeEmpleo.csprojResolveAssemblyReference.cache
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\ApplicationInsights.config
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\roslyn\csc.exe
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -17,6 +18,7 @@ C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\Antlr3.Runtime.dll
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\AspNet.ScriptManager.bootstrap.dll
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\BolsaDeEmpleoLibrary.dll
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\EntityFramework.dll
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\EntityFramework.SqlServer.dll
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\Microsoft.AI.Agent.Intercept.dll
@@ -49,6 +51,7 @@ C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\System.Web.Optimization.dll
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\System.Web.Providers.dll
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\WebGrease.dll
+C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\BolsaDeEmpleoLibrary.pdb
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\Microsoft.AI.Web.xml
@@ -74,8 +77,5 @@ C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\obj\Debug\BolsaDeEmpleo.csprojResolveAssemblyReference.cache
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\obj\Debug\BolsaDeEmpleo.dll
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\obj\Debug\BolsaDeEmpleo.pdb
-C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\BolsaDeEmpleoLibrary.dll
-C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\BolsaDeEmpleoLibrary.pdb

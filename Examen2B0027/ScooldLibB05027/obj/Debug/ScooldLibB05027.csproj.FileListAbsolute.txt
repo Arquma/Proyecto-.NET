@@ -1,0 +1,5 @@
+C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\Examen2B0027\ScooldLibB05027\bin\Debug\ScooldLibB05027.dll
+C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\Examen2B0027\ScooldLibB05027\bin\Debug\ScooldLibB05027.pdb
+C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\Examen2B0027\ScooldLibB05027\obj\Debug\ScooldLibB05027.dll
+C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\Examen2B0027\ScooldLibB05027\obj\Debug\ScooldLibB05027.pdb
+C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\Examen2B0027\ScooldLibB05027\obj\Debug\ScooldLibB05027.csprojResolveAssemblyReference.cache

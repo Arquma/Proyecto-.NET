@@ -12,10 +12,11 @@ namespace BolsaDeEmpleo.Account
 {
     public partial class Login : Page
 
-      
+
     {
         ContactoEmpleadorBusiness contactoBuss = new ContactoEmpleadorBusiness(WebConfigurationManager.ConnectionStrings["BolsaEmpleo"].ConnectionString);
         EmpleadoBusiness empleadoBuss = new EmpleadoBusiness(WebConfigurationManager.ConnectionStrings["BolsaEmpleo"].ConnectionString);
+        SolicitanteTrabajoBusiness solicitanteBuss = new SolicitanteTrabajoBusiness(WebConfigurationManager.ConnectionStrings["BolsaEmpleo"].ConnectionString);
 
         String conn = (WebConfigurationManager.ConnectionStrings["BolsaEmpleo"].ConnectionString);
 
@@ -24,12 +25,12 @@ namespace BolsaDeEmpleo.Account
            // RegisterHyperLink.NavigateUrl = "Register";
             // Enable this once you have account confirmation enabled for password reset functionality
             //ForgotPasswordHyperLink.NavigateUrl = "Forgot";
-            //OpenAuthLogin.ReturnUrl = Request.QueryString["ReturnUrl"];
-            //var returnUrl = HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"]);
-            //if (!String.IsNullOrEmpty(returnUrl))
-            //{
-             //   RegisterHyperLink.NavigateUrl += "?ReturnUrl=" + returnUrl;
-            //}
+          //  var returnUrl = HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"]);
+          //  if (!String.IsNullOrEmpty(returnUrl))
+           // {
+           //     RegisterHyperLink.NavigateUrl += "?ReturnUrl=" + returnUrl;
+           // }
+            Session.Clear();
         }
 
         protected void LogIn(object sender, EventArgs e)
@@ -46,14 +47,14 @@ namespace BolsaDeEmpleo.Account
                 String result;
                 if (contactoBuss.confirmLogin(Email.Text, Password.Text))
                 {
-                     result = "Empleador";
+                    result = "ContactoEmpleador";
                 }
-                
-                else if (empleadoBuss.confirmLogin(Email.Text, Password.Text))
+
+                else if (solicitanteBuss.confirmLogin(Email.Text, Password.Text))
                 {
                     result = "Solitante";
                 }
-                else if ((Email.Text=="admin") &&  (Password.Text=="admin"))
+                else if (empleadoBuss.confirmLogin(Email.Text, Password.Text))
                 {
                     result = "Administrador";
                 }
@@ -61,17 +62,26 @@ namespace BolsaDeEmpleo.Account
                 {
                     result = "Error";
                 }
-                
+
 
                 switch (result)
                 {
-                    case "Empleador":
+                    case "ContactoEmpleador":
+                        Session["tipoUsuario"] = "ContactoEmpleador";
+                        Session["usuario"] = Email.Text;
+                        Session["password"] = Password.Text;
                         Response.Redirect("~/Pages/InicioEmpleador.aspx");
                         break;
                     case "Solitante":
+                        Session["tipoUsuario"] = "Solitante";
+                        Session["usuario"] = Email.Text;
+                        Session["password"] = Password.Text;
                         Response.Redirect("~/Pages/InicioSolicitante.aspx");
                         break;
                     case "Administrador":
+                        Session["tipoUsuario"] = "Administrador";
+                        Session["usuario"] = Email.Text;
+                        Session["password"] = Password.Text;
                         Response.Redirect("~/Pages/InicioAdmin.aspx");
                         break;
 
@@ -84,10 +94,7 @@ namespace BolsaDeEmpleo.Account
             }
         }
 
-        public string validarLogin(String usarname,String pass)
-        {
 
-            return "";
-        }
+
     }
 }

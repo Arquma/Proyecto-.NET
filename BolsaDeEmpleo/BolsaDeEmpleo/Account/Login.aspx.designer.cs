@@ -7,11 +7,22 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BolsaDeEmpleo.Account {
-    
-    
-    public partial class Login {
-        
+namespace BolsaDeEmpleo.Account
+{
+
+
+    public partial class Login
+    {
+
+        /// <summary>
+        /// RegisterHyperLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink RegisterHyperLink;
+
         /// <summary>
         /// ErrorMessage control.
         /// </summary>
@@ -20,7 +31,7 @@ namespace BolsaDeEmpleo.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder ErrorMessage;
-        
+
         /// <summary>
         /// FailureText control.
         /// </summary>
@@ -29,7 +40,7 @@ namespace BolsaDeEmpleo.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal FailureText;
-        
+
         /// <summary>
         /// Email control.
         /// </summary>
@@ -38,7 +49,7 @@ namespace BolsaDeEmpleo.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Email;
-        
+
         /// <summary>
         /// Password control.
         /// </summary>
@@ -47,5 +58,14 @@ namespace BolsaDeEmpleo.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Password;
+
+        /// <summary>
+        /// HyperLink2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
     }
 }

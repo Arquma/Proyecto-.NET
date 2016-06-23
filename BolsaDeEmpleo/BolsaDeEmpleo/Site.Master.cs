@@ -55,6 +55,11 @@ namespace BolsaDeEmpleo
                 // Set Anti-XSRF token
                 ViewState[AntiXsrfTokenKey] = Page.ViewStateUserKey;
                 ViewState[AntiXsrfUserNameKey] = Context.User.Identity.Name ?? String.Empty;
+                if ((String)Session["tipoUsuario"]==null)
+                {
+                    Response.Redirect("~/Account/Login.aspx");
+                }
+
             }
             else
             {
@@ -74,6 +79,7 @@ namespace BolsaDeEmpleo
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
+            Session.Clear();
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
         }
     }

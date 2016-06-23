@@ -42,8 +42,10 @@
   <ItemGroup>
     <Compile Include="Business\ContactoEmpleadorBusiness.cs" />
     <Compile Include="Business\EmpleadoBusiness.cs" />
+    <Compile Include="Business\SolicitanteTrabajoBusiness.cs" />
     <Compile Include="Data\ContactoEmpleadorData.cs" />
     <Compile Include="Data\EmpleadoData.cs" />
+    <Compile Include="Data\SolicitanteTrabajoData.cs" />
     <Compile Include="Domain\AreaEspecialidad.cs" />
     <Compile Include="Domain\CategoriaPuesto.cs" />
     <Compile Include="Domain\ClienteEmpleador.cs" />

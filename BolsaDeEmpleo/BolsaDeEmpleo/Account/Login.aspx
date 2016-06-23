@@ -1,15 +1,20 @@
-﻿<%@ Page Title="Iniciar Sesión" Language="C#" MasterPageFile="~/Login.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="BolsaDeEmpleo.Account.Login" Async="true" %>
+﻿<%@ Page Title="Iniciar Sesión" Language="C#" MasterPageFile="~/Login.Master"  CodeBehind="Login.aspx.cs" Inherits="BolsaDeEmpleo.Account.Login" Async="true" %>
 
-<%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
+
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <h2><%: Title %></h2>
 
     <div class="row">
+         <div class="col-md-8">
+             <h4>Utilize una cuenta para ingresar
+                
+             </h4>
+         </div>
         <div class="col-md-8">
             <section id="loginForm">
                 <div class="form-horizontal">
-                    <h4>Utilize una cuenta para ingresar.</h4>
+                    
                     <hr />
                     <asp:PlaceHolder runat="server" ID="ErrorMessage" Visible="false">
                         <p class="text-danger">
@@ -39,26 +44,24 @@
                         <div class="col-md-offset-2 col-md-2">
                             <asp:Button runat="server" OnClick="LogIn" Text="Ingresar" CssClass="btn btn-success" />
                         </div>
-                  
-                    
-                        <div class="col-md-offset-2 col-md-2">
-                            <asp:Button runat="server"  Text="Registrarse" CssClass="btn btn-info" />
+
+                      <div class="col-md-offset-2 col-md-2">
+                             <a runat="server" class="btn btn-info" href="~/Account/Registro">Registrarse</a>
                         </div>
+                   
+                       
                   
                
-                <p>
-                    &nbsp;</p>
+             
                 <p>
                     <%-- Enable this once you have account confirmation enabled for password reset functionality
                     <asp:HyperLink runat="server" ID="ForgotPasswordHyperLink" ViewStateMode="Disabled">Forgot your password?</asp:HyperLink>
                     --%>
                 </p>
             </section>
+            
         </div>
-
-        <div class="col-md-4">
-            <section id="socialLoginForm">
-            </section>
-        </div>
+       
+        
     </div>
 </asp:Content>
