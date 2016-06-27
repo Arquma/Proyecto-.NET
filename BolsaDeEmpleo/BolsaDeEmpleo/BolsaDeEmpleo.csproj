@@ -202,6 +202,8 @@
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\prettify.css" />
+    <Content Include="Content\prettify.js" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -213,6 +215,8 @@
     </Content>
     <Content Include="Login.Master" />
     <Content Include="Admin.Master" />
+    <Content Include="Registro.Master" />
+    <Content Include="Content\jquery.bootstrap.wizard.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Pages\InicioAdmin.aspx" />
     <Content Include="Pages\InicioEmpleador.aspx" />
@@ -445,6 +449,13 @@
       <DependentUpon>InicioSolicitante.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registro.Master.cs">
+      <DependentUpon>Registro.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro.Master.designer.cs">
+      <DependentUpon>Registro.Master</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
