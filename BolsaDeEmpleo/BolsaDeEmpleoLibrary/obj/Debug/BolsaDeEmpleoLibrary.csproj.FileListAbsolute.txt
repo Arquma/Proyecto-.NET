@@ -2,3 +2,4 @@ C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleoL
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleoLibrary\bin\Debug\BolsaDeEmpleoLibrary.pdb
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleoLibrary\obj\Debug\BolsaDeEmpleoLibrary.dll
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleoLibrary\obj\Debug\BolsaDeEmpleoLibrary.pdb
+C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleoLibrary\obj\Debug\BolsaDeEmpleoLibrary.csprojResolveAssemblyReference.cache

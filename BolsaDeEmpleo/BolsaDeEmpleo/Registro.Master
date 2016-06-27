@@ -12,7 +12,8 @@
      <script src="../../Content/prettify.js" type="text/javascript"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="../../Content/jquery.bootstrap.wizard.js"></script>
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js"></script>
+
 
 </head>
 <body>
