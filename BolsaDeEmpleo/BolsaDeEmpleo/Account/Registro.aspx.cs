@@ -29,9 +29,15 @@ namespace BolsaDeEmpleo.Account
                 ddlInstitucion.DataBind();
 
                 LinkedList<NivelEstudio> niveles = nivelBusiness.GetNivelEstudio();
-                ddlArea.DataSource = niveles;
-                ddlArea.DataTextField = "descripcionNivelEstudio";
-                ddlArea.DataValueField = "codNivelEstudio";
+                ddlNivel.DataSource = niveles;
+                ddlNivel.DataTextField = "descripcionNivelEstudio";
+                ddlNivel.DataValueField = "codNivelEstudio";
+                ddlNivel.DataBind();
+
+                LinkedList<AreaEspecialidad> areas = areaBusiness.GetAreas();
+                ddlArea.DataSource = areas;
+                ddlArea.DataTextField = "descripcionAreaEspecialidad";
+                ddlArea.DataValueField = "codAreaEspecialidad";
                 ddlArea.DataBind();
 
             }
