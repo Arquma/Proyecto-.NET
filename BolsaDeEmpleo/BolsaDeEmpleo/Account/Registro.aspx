@@ -58,9 +58,9 @@
         </div>
 
                     <div class="form-group">
-            <asp:Label runat="server" AssociatedControlID="FechaNacimiento" CssClass="col-md-2 control-label">Fecha de Nacimiento</asp:Label>
+            <asp:Label runat="server" AssociatedControlID="Email" CssClass="col-md-2 control-label">Email</asp:Label>
             <div class="col-md-8">
-                <asp:TextBox runat="server" ID="FechaNacimiento" CssClass="form-control" TextMode="Email" />
+                <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
             </div>
         </div>
 
@@ -102,27 +102,36 @@
     		<div class="tab-pane" id="tab3">
                    <hr />
                     <div class="table-responsive">
-                        <table id="tabla" class="table" >
-                             <thead>
-                              <tr>
-                                <th>Empresa</th>
-                                <th>Puesto</th>
-                                <th>Fecha Inicio</th>
-                                <th>Fecha Fin</th>
-                              </tr>
-                            </thead>
-
-                                </table>
+                        <asp:GridView ID="gvtabla" runat="server" CssClass="table">
+                               
+                        </asp:GridView>
+                       
                     </div>
-                      <button type="button" id="add" class="btn btn-success">Agregar Fila</button>
+                 
+                
+                 <hr />
+                <table>
+                    <tr>
+                        <td><asp:TextBox runat="server" ID="t1" CssClass="form-control"  /></td>
+                        <td><asp:TextBox runat="server" ID="t2" CssClass="form-control"  /></td>
+                        <td><asp:TextBox runat="server" ID="t3" CssClass="form-control"  /></td>
+                        <td><asp:TextBox runat="server" ID="t4" CssClass="form-control"  /></td>
+
+                    </tr>
+                        </table>
+                <br/>
+
+                    <asp:Button runat="server" OnClick="Agregar" Text="Agregar" CssClass="btn btn-success" ID="btnAgregar" />
+                   <%//    <button type="button" id="add" class="btn btn-success">Agregar Fila</button>%>
+                 
     	    </div>
     		<div class="tab-pane" id="tab4">
              <div class="form-horizontal">
                    <hr />
     			 <div class="form-group">
-                    <asp:Label runat="server" AssociatedControlID="Nombre" CssClass="col-md-2 control-label">Usuario</asp:Label>
+                    <asp:Label runat="server" AssociatedControlID="Usuario" CssClass="col-md-2 control-label">Usuario</asp:Label>
                     <div class="col-md-6">
-                        <asp:TextBox runat="server" ID="TextBox1" CssClass="form-control" />
+                        <asp:TextBox runat="server" ID="Usuario" CssClass="form-control" />
                     </div>
                 </div>
                 <div class="form-group">
@@ -139,7 +148,8 @@
     			
     			<li class="previous"><a href="javascript:;">Anterior</a></li>
     		  	<li class="next"><a href="javascript:;">Siguiente</a></li>
-    			<li class="finish"><a href="javascript:;">Guardar</a></li>
+    			<li class="finish"> <asp:Button runat="server" OnClick="Guardar" Text="Guardar" CssClass="btn btn-success" ID="btnGuardar" /></li>
+               
     		</ul>
     	</div>
     </div>
@@ -156,7 +166,9 @@
     		var $percent = ($current/$total) * 100;
     		$('#rootwizard').find('.bar').css({width:$percent+'%'});
     	}});
-    	$('#rootwizard .finish').click(function() {
+      	$('#rootwizard .finish').click(function () {
+
+
     		alert('Finished!, Starting over!');
     		$('#rootwizard').find("a[href*='tab1']").trigger('click');
     	});
@@ -178,6 +190,8 @@
             $("#tabla").append(nuevaFila);
 
         });
+
+
 
     </script>
 

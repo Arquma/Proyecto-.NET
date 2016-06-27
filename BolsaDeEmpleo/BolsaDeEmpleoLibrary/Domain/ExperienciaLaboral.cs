@@ -11,8 +11,8 @@ namespace BolsaDeEmpleoLibrary.Domain
         int idExperiencia;
         string empresa;
         string puesto;
-        DateTime fechaIngreso;
-        DateTime fechaTermino;
+        string fechaIngreso;
+        string fechaTermino;
         string descripcionFunciones;
 
         public int IdExperiencia
@@ -54,7 +54,7 @@ namespace BolsaDeEmpleoLibrary.Domain
             }
         }
 
-        public DateTime FechaIngreso
+        public string FechaIngreso
         {
             get
             {
@@ -67,7 +67,7 @@ namespace BolsaDeEmpleoLibrary.Domain
             }
         }
 
-        public DateTime FechaTermino
+        public string FechaTermino
         {
             get
             {
