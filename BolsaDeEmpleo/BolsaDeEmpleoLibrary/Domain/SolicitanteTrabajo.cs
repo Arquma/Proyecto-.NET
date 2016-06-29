@@ -25,11 +25,12 @@ namespace BolsaDeEmpleoLibrary.Domain
         string clave;
         Boolean solicitanteActivo;
         Boolean experienciaLaboral;
+        LinkedList<ExperienciaLaboral> experiencia;
 
 
         public SolicitanteTrabajo()
         {
-
+            Experiencia = new LinkedList<ExperienciaLaboral>();
         }
 
         public int IdSolicitante
@@ -237,6 +238,19 @@ namespace BolsaDeEmpleoLibrary.Domain
             set
             {
                 experienciaLaboral = value;
+            }
+        }
+
+        public LinkedList<ExperienciaLaboral> Experiencia
+        {
+            get
+            {
+                return experiencia;
+            }
+
+            set
+            {
+                experiencia = value;
             }
         }
     }

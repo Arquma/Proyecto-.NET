@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BolsaDeEmpleoLibrary.Domain;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -44,6 +45,11 @@ namespace BolsaDeEmpleoLibrary.Data
             }
             return false;
         }
+
+
+       
+
+
 
     }
 }

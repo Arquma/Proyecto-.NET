@@ -16,7 +16,10 @@ namespace BolsaDeEmpleo.Account
         InstitucionEstudioBusiness institucionBusiness = new InstitucionEstudioBusiness(WebConfigurationManager.ConnectionStrings["BolsaEmpleo"].ConnectionString);
         NivelEstudioBusiness nivelBusiness = new NivelEstudioBusiness(WebConfigurationManager.ConnectionStrings["BolsaEmpleo"].ConnectionString);
         AreaEspecialidadBusiness areaBusiness = new AreaEspecialidadBusiness(WebConfigurationManager.ConnectionStrings["BolsaEmpleo"].ConnectionString);
+        EspecialidadSolicitanteBusiness especialdadBusiness = new EspecialidadSolicitanteBusiness(WebConfigurationManager.ConnectionStrings["BolsaEmpleo"].ConnectionString);
+
         static LinkedList<ExperienciaLaboral> experiencias;
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -64,13 +67,7 @@ namespace BolsaDeEmpleo.Account
                 gvtabla.Columns.Add(boundfield3);
 
                 experiencias = new LinkedList<ExperienciaLaboral>();
-                ExperienciaLaboral exp = new ExperienciaLaboral();
-                exp.DescripcionFunciones = "algo";
-                exp.Empresa = "ucr";
-                exp.FechaIngreso = "123";
-                exp.FechaTermino = "321";
-
-                experiencias.AddLast(exp);
+               
                 gvtabla.DataSource = experiencias;
                 gvtabla.AutoGenerateColumns = false;
                 gvtabla.DataBind();
@@ -82,7 +79,6 @@ namespace BolsaDeEmpleo.Account
             AreaEspecialidad area = new AreaEspecialidad();
             InstitucionEstudio institucion = new InstitucionEstudio();
             NivelEstudio nivel = new NivelEstudio();
-            LinkedList<ExperienciaLaboral> experiencias = new LinkedList<ExperienciaLaboral>();
             SolicitanteTrabajo solicitante = new SolicitanteTrabajo();
             EspecialidadSolicitante especialidad = new EspecialidadSolicitante();
 
@@ -99,10 +95,17 @@ namespace BolsaDeEmpleo.Account
             solicitante.Ciudad = Ciudad.Text;
             solicitante.Clave = Pass.Text;
             solicitante.NombreUsuario = Usuario.Text;
+            solicitante.Experiencia = experiencias;
 
-          //  int num = tabla.Rows.Count;
+            especialidad.NombreTituloObtenido = Titulo.Text;
+            especialidad.AreaEspecialidad = area;
+            especialidad.InsstitucionEstudio = institucion;
+            especialidad.NivelEstudio = nivel;
+            especialidad.SolicitanteTrabajo = solicitante;
 
+            especialdadBusiness.insertarSolicitante(especialidad);
 
+            Response.Redirect("~/Account/Login.aspx");
 
         }
         protected void Agregar(object sender, EventArgs e)

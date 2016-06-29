@@ -32,42 +32,42 @@
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Nombre" CssClass="col-md-2 control-label">Nombre</asp:Label>
             <div class="col-md-6">
-                <asp:TextBox runat="server" ID="Nombre" CssClass="form-control" TextMode="Email" />
+                <asp:TextBox runat="server" ID="Nombre" CssClass="form-control"  />
             </div>
         </div>
 
                    <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Apellidos" CssClass="col-md-2 control-label">Apellidos</asp:Label>
             <div class="col-md-8">
-                <asp:TextBox runat="server" ID="Apellidos" CssClass="form-control" TextMode="Email" />
+                <asp:TextBox runat="server" ID="Apellidos" CssClass="form-control"  />
             </div>
         </div>
 
                    <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Direccion" CssClass="col-md-2 control-label">Direccion</asp:Label>
             <div class="col-md-8">
-                <asp:TextBox runat="server" ID="Direccion" CssClass="form-control" TextMode="Email" />
+                <asp:TextBox runat="server" ID="Direccion" CssClass="form-control"  />
             </div>
         </div>
 
                     <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Ciudad" CssClass="col-md-2 control-label">Ciudad</asp:Label>
             <div class="col-md-8">
-                <asp:TextBox runat="server" ID="Ciudad" CssClass="form-control" TextMode="Email" />
+                <asp:TextBox runat="server" ID="Ciudad" CssClass="form-control"  />
             </div>
         </div>
 
                     <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Email" CssClass="col-md-2 control-label">Email</asp:Label>
             <div class="col-md-8">
-                <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
+                <asp:TextBox runat="server" ID="Email" CssClass="form-control"  />
             </div>
         </div>
 
                     <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Genero" CssClass="col-md-2 control-label">Genero</asp:Label>
             <div class="col-md-8">
-                <asp:TextBox runat="server" ID="Genero" CssClass="form-control" TextMode="Email" />
+                <asp:TextBox runat="server" ID="Genero" CssClass="form-control"  />
             </div>
         </div>
 
@@ -91,13 +91,17 @@
                       
                   </div>
 
-                
-
-                <div class="form-group">
+                    <div class="form-group">
                       <label for="sel1">Area de Especialidad:</label>
                          <asp:DropDownList ID="ddlArea" CssClass="form-control" runat="server">
                         </asp:DropDownList>
                   </div>
+
+                  <div class="form-group">
+                    <label for="sel1">Nombre Titulo Obtenido:</label>         
+                    <asp:TextBox runat="server" ID="Titulo" CssClass="form-control" />
+                 </div>
+
     	    </div>
     		<div class="tab-pane" id="tab3">
                    <hr />
@@ -168,11 +172,16 @@
     	}});
       	$('#rootwizard .finish').click(function () {
 
+      	    alert('Guardado con exito');
+      	    setTimeout("redirect", 5000);
+    		location.href = "Login.aspx";
 
-    		alert('Finished!, Starting over!');
-    		$('#rootwizard').find("a[href*='tab1']").trigger('click');
     	});
         });
+
+        function redirect() {
+            location.href = "Login.aspx";
+        }
 
 
         $("#add").click(function () {
