@@ -20,7 +20,7 @@ namespace BolsaDeEmpleoLibrary.Business
             contactoEmpleadorData = new ContactoEmpleadorData(this.conetionString);
         }
 
-        public Boolean confirmLogin (String user, String pass)
+        public int confirmLogin (String user, String pass)
         {
             return contactoEmpleadorData.confirmLogin(user, pass);
         }

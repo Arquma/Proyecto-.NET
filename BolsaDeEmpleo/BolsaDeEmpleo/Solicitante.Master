@@ -55,8 +55,8 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
 
-                        <li><a runat="server" href="~/"><spam class="glyphicon glyphicon-list-alt" style="padding-right:10px"></spam>Puestos Vacantes</a></li>
-                        <li><a runat="server" href="~/"><spam class="glyphicon glyphicon-list-alt" style="padding-right:10px"></spam>Entervistas</a></li>
+                        <li><a runat="server" href="~/Pages/PuestosVacantes"><spam class="glyphicon glyphicon-list-alt" style="padding-right:10px"></spam>Puestos Vacantes</a></li>
+                        <li><a runat="server" href="~/"><spam class="glyphicon glyphicon-list-alt" style="padding-right:10px"></spam>Entrevistas</a></li>
                        <li><a runat="server" href="~/"><spam class="glyphicon glyphicon-list-alt" style="padding-right:10px"></spam>Informacion Personal</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">

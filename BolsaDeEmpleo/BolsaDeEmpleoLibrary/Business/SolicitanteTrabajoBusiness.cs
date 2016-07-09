@@ -20,7 +20,7 @@ namespace BolsaDeEmpleoLibrary.Business
             solicitanteData = new SolicitanteTrabajoData(this.coneccion);
         }
 
-        public Boolean confirmLogin(String user, String pass)
+        public int confirmLogin(String user, String pass)
         {
             return solicitanteData.confirmLogin(user, pass);
         }

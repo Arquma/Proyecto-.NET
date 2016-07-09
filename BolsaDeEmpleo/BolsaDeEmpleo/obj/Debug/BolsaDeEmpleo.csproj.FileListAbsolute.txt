@@ -1,4 +1,3 @@
-C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\obj\Debug\BolsaDeEmpleo.csprojResolveAssemblyReference.cache
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\ApplicationInsights.config
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\roslyn\csc.exe
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -77,5 +76,6 @@ C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\obj\Debug\BolsaDeEmpleo.csprojResolveAssemblyReference.cache
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\obj\Debug\BolsaDeEmpleo.dll
 C:\Users\Aaron\Documents\Lenguajes2016\Proyectos\C#\BolsaDeEmpleo\BolsaDeEmpleo\obj\Debug\BolsaDeEmpleo.pdb

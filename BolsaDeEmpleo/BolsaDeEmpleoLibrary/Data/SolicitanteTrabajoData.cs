@@ -17,12 +17,12 @@ namespace BolsaDeEmpleoLibrary.Data
             this.conectionString = conectionString;
         }
 
-        public Boolean confirmLogin(String user, String pass)
+        public int confirmLogin(String user, String pass)
         {
             
             SqlConnection conexion = new SqlConnection(conectionString);
             //----- 2-----//
-            SqlCommand cmdLogin = new SqlCommand("select count(id_solicitante) solicitante " +
+            SqlCommand cmdLogin = new SqlCommand("select id_solicitante  " +
                                                    " from Solicitante_Trabajo" +
                                                    " where nombre_usuario = '" + user + "'" +
                                                    " and clave = '" + pass + "'", conexion);
@@ -34,16 +34,16 @@ namespace BolsaDeEmpleoLibrary.Data
             {
                 
 
-                existe = Int32.Parse(drLogin["solicitante"].ToString());
+                existe = Int32.Parse(drLogin["id_solicitante"].ToString());
 
             }//fin while
 
             conexion.Close();
-            if (existe == 1)
+            if (existe != 0)
             {
-                return true;
+                return existe;
             }
-            return false;
+            return 0;
         }
 
 

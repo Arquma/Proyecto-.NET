@@ -55,10 +55,7 @@ namespace BolsaDeEmpleo
                 // Set Anti-XSRF token
                 ViewState[AntiXsrfTokenKey] = Page.ViewStateUserKey;
                 ViewState[AntiXsrfUserNameKey] = Context.User.Identity.Name ?? String.Empty;
-                if ((String)Session["tipoUsuario"]==null)
-                {
-                    Response.Redirect("~/Account/Login.aspx");
-                }
+              
 
             }
             else

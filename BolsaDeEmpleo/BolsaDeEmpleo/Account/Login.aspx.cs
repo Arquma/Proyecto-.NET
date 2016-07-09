@@ -45,17 +45,20 @@ namespace BolsaDeEmpleo.Account
                 // To enable password failures to trigger lockout, change to shouldLockout: true
                 //String result = //signinManager.PasswordSignIn(Email.Text, Password.Text, shouldLockout: false);
                 String result;
-                if (contactoBuss.confirmLogin(Email.Text, Password.Text))
+                if (contactoBuss.confirmLogin(Email.Text, Password.Text) != 0)
                 {
+                    Session["id_usuario"] = contactoBuss.confirmLogin(Email.Text, Password.Text);
                     result = "ContactoEmpleador";
                 }
 
-                else if (solicitanteBuss.confirmLogin(Email.Text, Password.Text))
+                else if (solicitanteBuss.confirmLogin(Email.Text, Password.Text) != 0)
                 {
+                    Session["id_usuario"] = solicitanteBuss.confirmLogin(Email.Text, Password.Text);
                     result = "Solitante";
                 }
-                else if (empleadoBuss.confirmLogin(Email.Text, Password.Text))
+                else if (empleadoBuss.confirmLogin(Email.Text, Password.Text) != 0)
                 {
+                    Session["id_usuario"] = empleadoBuss.confirmLogin(Email.Text, Password.Text);
                     result = "Administrador";
                 }
                 else

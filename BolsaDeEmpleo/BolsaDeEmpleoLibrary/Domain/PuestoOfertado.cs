@@ -10,8 +10,8 @@ namespace BolsaDeEmpleoLibrary.Domain
     {
         int idPuesto;
         string descripcionPuesto;
-        string experienciaRequerida;
-        int abierto;
+        string experienciaRequerida; 
+        Boolean abierto;
         int numeroVacantes;
         string diasLaborales;
         string horaEntrada;
@@ -21,6 +21,12 @@ namespace BolsaDeEmpleoLibrary.Domain
         string ciudad;
         ClienteEmpleador clienteEmpleador;
         CategoriaPuesto categoriaPuesto;
+
+        public PuestoOfertado()
+        {
+            clienteEmpleador = new ClienteEmpleador();
+            categoriaPuesto = new CategoriaPuesto();
+        }
 
         public int IdPuesto
         {
@@ -61,7 +67,7 @@ namespace BolsaDeEmpleoLibrary.Domain
             }
         }
 
-        public int Abierto
+        public Boolean Abierto
         {
             get
             {
@@ -191,9 +197,6 @@ namespace BolsaDeEmpleoLibrary.Domain
             }
         }
 
-        public PuestoOfertado()
-        {
-
-        }
+      
     }
 }

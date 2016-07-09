@@ -41,19 +41,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\AreaEspecialidadBusiness.cs" />
+    <Compile Include="Business\CategoriaPuestoBusiness.cs" />
     <Compile Include="Business\ContactoEmpleadorBusiness.cs" />
     <Compile Include="Business\EmpleadoBusiness.cs" />
     <Compile Include="Business\EspecialidadSolicitanteBusiness.cs" />
     <Compile Include="Business\InstitucionEstudioBusiness.cs" />
     <Compile Include="Business\NivelEstudioBusiness.cs" />
+    <Compile Include="Business\PuestoOfertadoBusiness.cs" />
+    <Compile Include="Business\SolicitantePuestoOfertaBusiness.cs" />
     <Compile Include="Business\SolicitanteTrabajoBusiness.cs" />
     <Compile Include="Data\AreaEspecialidadData.cs" />
+    <Compile Include="Data\CategoriaPuestoData.cs" />
     <Compile Include="Data\ContactoEmpleadorData.cs" />
     <Compile Include="Data\EmpleadoData.cs" />
     <Compile Include="Data\EspecialidadSolicitanteData.cs" />
     <Compile Include="Data\EsperienciaLaboralData.cs" />
     <Compile Include="Data\InstitucionEstudioData.cs" />
     <Compile Include="Data\NivelEstudioData.cs" />
+    <Compile Include="Data\PuestoOfertaData.cs" />
+    <Compile Include="Data\SolicitantePuestoOfertaData.cs" />
     <Compile Include="Data\SolicitanteTrabajoData.cs" />
     <Compile Include="Domain\AreaEspecialidad.cs" />
     <Compile Include="Domain\CategoriaPuesto.cs" />
@@ -67,6 +73,7 @@
     <Compile Include="Domain\NivelEstudio.cs" />
     <Compile Include="Domain\PuestoOfertado.cs" />
     <Compile Include="Domain\RolEmpleado.cs" />
+    <Compile Include="Domain\SolicitantePuestoOferta.cs" />
     <Compile Include="Domain\SolicitanteTrabajo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

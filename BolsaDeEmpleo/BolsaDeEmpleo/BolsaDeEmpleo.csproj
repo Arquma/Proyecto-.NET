@@ -76,6 +76,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -118,10 +122,6 @@
     <Reference Include="Antlr3.Runtime">
       <Private>True</Private>
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <Private>True</Private>
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
       <Private>True</Private>
@@ -215,6 +215,8 @@
     </Content>
     <Content Include="Login.Master" />
     <Content Include="Admin.Master" />
+    <Content Include="Pages\PuestosVacantesInicio.aspx" />
+    <Content Include="Pages\PuestosVacantes.aspx" />
     <Content Include="Registro.Master" />
     <Content Include="Content\jquery.bootstrap.wizard.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -264,6 +266,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Site.Mobile.Master" />
     <Content Include="Solicitante.Master" />
+    <Content Include="Inicio.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -448,6 +451,20 @@
     <Compile Include="Pages\InicioSolicitante.aspx.designer.cs">
       <DependentUpon>InicioSolicitante.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\PuestosVacantesInicio.aspx.cs">
+      <DependentUpon>PuestosVacantesInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PuestosVacantesInicio.aspx.designer.cs">
+      <DependentUpon>PuestosVacantesInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PuestosVacantes.aspx.cs">
+      <DependentUpon>PuestosVacantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PuestosVacantes.aspx.designer.cs">
+      <DependentUpon>PuestosVacantes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registro.Master.cs">
       <DependentUpon>Registro.Master</DependentUpon>
@@ -455,6 +472,13 @@
     </Compile>
     <Compile Include="Registro.Master.designer.cs">
       <DependentUpon>Registro.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.Master.cs">
+      <DependentUpon>Inicio.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.Master.designer.cs">
+      <DependentUpon>Inicio.Master</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
